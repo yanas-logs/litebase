@@ -1,0 +1,85 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.navbar-left .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Logo */
+.app-logo {
+  height: 40px;
+  padding: 5px;
+}
+
+/* Nav links (desktop) */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links li a {
+  display: block;
+  color: white;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #111;
+}
+
+.nav-links li a.active {
+  background-color: #04aa6d;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .app-logo {
+    height: 32px; /* Mobile logo */
+  }
+
+  .navbar-center {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: block;
+    width: 100%;
+    background-color: #000;
+  }
+  .nav-links li {
+    display: block;
+  }
+  .nav-links li a {
+    display: block;
+    padding: 12px;
+  }
+}
