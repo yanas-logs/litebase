@@ -33,20 +33,7 @@
   }
 }
 
-/* --- Navbar --- */
-.logo {
-  font-size: 18px;       /* Brand SIze */
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: white;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-.logo:hover {
-  color: #61dafb;
-}
 
-/* Default Card */
 .card {
   padding: 2em;
 }
