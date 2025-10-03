@@ -1,27 +1,37 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./css/Navbar.css";
+import brand_logo from "../assets/brand_logo.svg";
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-
+const Navbar = () => {
   return (
-    <nav className="navbar">
-      {/* Logo */}
-      <div className="logo">Navbar</div>
+    <nav className="navbar" role="navigation">
+      {/* Left */}
+      <div className="navbar-left">
+        <Link to="/" className="logo">
+          <img src={brand_logo} alt="logo" className="app-logo" />
+          <span className="brand-name"></span>
+        </Link>
+      </div>
 
-      {/* Hamburger Button (Mobile Only) */}
-      <button className="menu-toggle" onClick={toggleMenu}>
-        {isOpen ? "✖" : "☰"}
-      </button>
+      {/* Center */}
+      <div className="navbar-center">
+        <ul className="nav-links">
+          <li>
+            <Link to="/products">Products</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
 
-      {/* Menu Items */}
-      <ul className={`menu ${isOpen ? "active" : ""}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+      {/* Right */}
+      <div className="navbar-right"></div>
     </nav>
   );
-}
+};
+
+export default Navbar;
