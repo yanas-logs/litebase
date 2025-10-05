@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header/>
       <main style={{ padding: "20px" }}>
         <h1>Welcome 🚀</h1>
         <p>Main content area.</p>
