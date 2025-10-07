@@ -9,8 +9,9 @@ function App() {
 
   return (
     <>
-      <Slider />
       <Header />
+      <Slider />
+
       <main style={{ padding: "20px" }}>
         <Routes>
           <Route
