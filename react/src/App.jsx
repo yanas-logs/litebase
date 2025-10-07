@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { Slider } from './components/Slider';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Slider />
       <Header />
       <main style={{ padding: "20px" }}>
         <Routes>
