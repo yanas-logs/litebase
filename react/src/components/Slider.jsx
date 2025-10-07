@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./css/Slider.css";
 
 export const Slider = () => {
     const [current, setCurrent] = useState(0);
@@ -12,6 +13,6 @@ export const Slider = () => {
     }, []);
 
     return (
-        <div>Slider</div>
+        <div className="slider">Slider</div>
     )
 }
