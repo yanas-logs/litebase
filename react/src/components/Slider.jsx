@@ -1,18 +1,26 @@
-import { useState, useEffect } from "react";
-import "./css/Slider.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "../components/css/Slider.css";
+import { Navigation, Pagination, A11y } from "swiper/modules";
+import images from "../data/images.json";
 
-export const Slider = () => {
-    const [current, setCurrent] = useState(0);
-    const images = [];
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrent((prev) => (prev + 1) % images.length);
-        }, 5000);
-        return () => clearInterval(interval);
-    }, []);
-
-    return (
-        <div className="slider">Slider</div>
-    )
-}
+export const Slider = ({ slides = images }) => {
+  return (
+    <Swiper
+      modules={[Navigation, Pagination, A11y]}
+      spaceBetween={30}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      loop={true}
+    >
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.id}>
+          <img src={slide.url} alt={slide.title} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
