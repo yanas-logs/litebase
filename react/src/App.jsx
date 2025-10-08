@@ -12,7 +12,7 @@ function App() {
       <Header />
       
 
-      <main style={{ padding: "20px" }}>
+      <main style={{ padding: "1px" }}>
         <Slider />
         <Routes>
           <Route
