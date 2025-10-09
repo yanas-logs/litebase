@@ -2,10 +2,10 @@ import { Slider } from "../components/Slider";
 
 export default function Home() {
   return (
-    <div>
+    <section>
       <Slider />
       <h1>Welcome 🚀</h1>
       <p>Main content area.</p>
-    </div>
+    </section>
   );
 }
