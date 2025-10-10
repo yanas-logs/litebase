@@ -1,8 +1,10 @@
+/* === CSS: Style 1 (Active) === */
 .slider {
-  width: 100%;
-  height: 400px;
+  width: 75%;
+  height: 555px;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .swiper-slide {
@@ -17,3 +19,58 @@
   object-fit: cover;
   display: block;
 }
+
+/* ============================================================= */
+/* === CSS: Style 2 (Full width) ===*/
+
+/* .slider {
+  width: 100vw;              => full screen 
+  height: 555px;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;        => Edge from: container parent 
+  margin-right: -50vw;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+*/
+
+/* ============================================================= */
+/* === CSS: Style 3 (Centered with shadow - commented) ========= */
+/*
+.slider {
+  width: 75%;
+  height: 555px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;  => Center 
+  border-radius: 20px; => Optional 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+*/

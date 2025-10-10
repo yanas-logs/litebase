@@ -9,23 +9,25 @@ import images from "../data/images.json";
 
 export const Slider = ({ slides = images }) => {
   return (
-    <Swiper
-      modules={[Navigation, Pagination, A11y, Autoplay]}
-      spaceBetween={30}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      loop={true}
-      autoplay={{
+    <section className="slider">
+      <Swiper
+        modules={[Navigation, Pagination, A11y, Autoplay]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        loop={true}
+        autoplay={{
           delay: 5000,
-          disableOnInteraction: false, 
+          disableOnInteraction: false,
         }}
-    >
-      {slides.map((slide) => (
-        <SwiperSlide key={slide.id}>
-          <img src={slide.url} alt={slide.title} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+      >
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <img src={slide.url} alt={slide.title} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 };
