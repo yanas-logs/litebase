@@ -5,16 +5,14 @@ import "./css/Footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
+      {/* Left: Logo */}
+      <div className="footer-left">
+        <Link to="/" className="footer-logo">
+          <img src={brand_logo} alt="logo" className="footer-logo-img" />
+          <span className="footer-brand">.</span>
+        </Link>
+      </div>
       <div className="footer-container">
-
-        {/* Left: Logo */}
-        <div className="footer-left">
-          <Link to="/" className="footer-logo">
-            <img src={brand_logo} alt="logo" className="footer-logo-img" />
-            <span className="footer-brand">.</span>
-          </Link>
-        </div>
-
         {/* Center: Navigation */}
         <div className="footer-center">
           <ul className="footer-links">
