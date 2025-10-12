@@ -12,6 +12,14 @@ export default function Footer() {
           <span className="footer-brand">.</span>
         </Link>
       </div>
+
+      <p className="footer-description">
+        Website is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Corrupti quis velit architecto facilis quam mollitia magnam facere officiis.
+        Rerum voluptate recusandae, ipsum eum necessitatibus eaque sapiente maxime similique minus distinctio?
+      </p>
+
+      {/* Center: Navigation */}
       <div className="footer-container">
         {/* Center: Navigation */}
         <div className="footer-center">
