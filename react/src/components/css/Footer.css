@@ -25,14 +25,15 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #fff;
+  color: #fff; 
 }
 
 .footer-logo-img {
-  width: 100px;
+  width: 125px;
   height: 50px;
   object-fit: contain;
   border-radius: 8px;
+  padding: 20px;
 }
 
 .footer-brand {
@@ -46,14 +47,22 @@
   display: flex;
   justify-content: center;
 }
+
 .footer-description {
   max-width: 600px;
   font-size: 0.9rem;
   color: #ccc;
   line-height: 1.4;
   margin-bottom: 15px;
-  text-align: left;
+  text-align: justify;
 }
+
+p {
+  width: 300px;
+  margin: 0;
+  padding: 20px;
+}
+
 .footer-links {
   list-style: none;
   display: flex;
@@ -85,6 +94,11 @@
 .footer-copy {
   font-size: 0.85rem;
   color: #777;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 1px solid #222;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ===== Responsive ===== */
