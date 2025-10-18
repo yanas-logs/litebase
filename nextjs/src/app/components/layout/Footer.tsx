@@ -11,8 +11,8 @@ export default function Footer() {
         <p>&copy; {year} My Next.js App. All rights reserved.</p>
         <nav className="mt-2">
           <Link href="/" className="mx-2 hover:underline">Home</Link>
-          <Link href="/about" className="mx-2 hover:underline">About</Link>
-          <Link href="/contact" className="mx-2 hover:underline">Contact</Link>
+          <Link href="/components/About" className="mx-2 hover:underline">About</Link>
+          <Link href="/components/Contact" className="mx-2 hover:underline">Contact</Link>
         </nav>
       </div>
     </footer>   
