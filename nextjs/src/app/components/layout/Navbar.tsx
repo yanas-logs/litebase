@@ -16,6 +16,9 @@ export default function Navbar() {
           <Link href="/" className="hover:text-gray-300">Home</Link>
         </li>
         <li>
+          <Link href="/components/Product" className="hover:text-gray-300">Product</Link>
+        </li>
+        <li>
           <Link href="/components/About" className="hover:text-gray-300">About</Link>
         </li>
         <li>
