@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 export default function Hero() {
   return (
     <section
-      className="relative h-screen bg-cover bg-center flex items-center justify-center text-center"
+      className="relative min-h-screen bg-cover bg-center flex items-center justify-center text-center"
       style={{ backgroundImage: "url('/image-cozy-library.webp')" }}
     >
       {/* Overlay more darker for readable */}
