@@ -4,7 +4,7 @@ import Hero from "./components/sections/Hero";
 
 export default function Page() {
   return (
-    <section className="w-full text-center py-20">
+    <section className="w-full text-center">
       <Hero />
     </section>
   );
