@@ -25,17 +25,17 @@
     "react": "19.3.0-canary-4fdf7cf2-20251003",
     "react-dom": "19.3.0-canary-4fdf7cf2-20251003",
     "react-server-dom-webpack": "19.3.0-canary-4fdf7cf2-20251003",
-    "rwsdk": "1.0.0-beta.19"
+    "rwsdk": "1.0.0-beta.23"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.13.10",
-    "@cloudflare/workers-types": "4.20251004.0",
-    "@types/node": "~24.5.2",
-    "@types/react": "19.1.2",
-    "@types/react-dom": "19.1.2",
-    "typescript": "5.8.3",
-    "vite": "7.1.11",
-    "wrangler": "4.42.0"
+    "@cloudflare/vite-plugin": "1.13.18",
+    "@cloudflare/workers-types": "4.20251014.0",
+    "@types/node": "~24.9.2",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3",
+    "vite": "7.1.12",
+    "wrangler": "4.45.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
