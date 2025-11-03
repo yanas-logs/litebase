@@ -1,13 +1,9 @@
-import { Navbar } from "../components/Navbar.js";
-import { Welcome } from "./Welcome.js";
+import { Welcome } from "./Welcome";
 
 export const Home = () => {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Welcome />
-      </main>
-    </>
+    <main>
+      <Welcome />
+    </main>
   );
 };
