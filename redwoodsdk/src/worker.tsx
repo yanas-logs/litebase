@@ -1,9 +1,11 @@
-import { render, route } from "rwsdk/router";
+import { render, route, layout } from "rwsdk/router";
 import { defineApp } from "rwsdk/worker";
 
 import { Document } from "@/app/Document";
 import { setCommonHeaders } from "@/app/headers";
 import { Home } from "@/app/pages/Home";
+import { About } from "@/app/pages/About";
+import { AppLayout } from "@/app/layouts/AppLayout";
 
 export type AppContext = {};
 
@@ -13,5 +15,10 @@ export default defineApp([
     // setup ctx here
     ctx;
   },
-  render(Document, [route("/", Home)]),
+  render(Document, [
+    layout(AppLayout, [
+      route("/", Home),
+      route("/about", About),
+    ]),
+  ]),
 ]);
