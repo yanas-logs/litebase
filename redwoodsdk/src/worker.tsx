@@ -7,6 +7,7 @@ import { Home } from "@/app/pages/Home";
 import { About } from "@/app/pages/About";
 import { AppLayout } from "@/app/layouts/AppLayout";
 import { Contact } from "./app/pages/Contact";
+import { Docs } from "./app/pages/Docs";
 
 export type AppContext = {};
 
@@ -19,6 +20,7 @@ export default defineApp([
   render(Document, [
     layout(AppLayout, [
       route("/", Home),
+      route("/docs", Docs),
       route("/about", About),
       route("/contact", Contact),
     ]),
