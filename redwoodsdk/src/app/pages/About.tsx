@@ -1,3 +1,10 @@
+import { Welcome } from "./Welcome";
+import styles from "./Welcome.module.css";
+
 export function About() {
-    return <h2>About Page</h2>;
-}
+    return (
+        <main>
+          <Welcome />
+        </main>
+      );
+    };
