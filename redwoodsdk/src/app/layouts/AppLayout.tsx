@@ -1,5 +1,6 @@
 import type { LayoutProps } from "rwsdk/router";
 import { Navbar } from "@/app/components/Navbar";
+import { Footer } from "../components/Footer";
 
 export function AppLayout({ children, requestInfo }: LayoutProps) {
   return (
@@ -15,17 +16,7 @@ export function AppLayout({ children, requestInfo }: LayoutProps) {
 
       <main style={{ padding: "2rem" }}>{children}</main>
 
-      <footer
-        style={{
-          marginTop: "2rem",
-          textAlign: "center",
-          borderTop: "1px solid #333",
-          padding: "1rem",
-          color: "#aaa",
-        }}
-      >
-        &copy; {new Date().getFullYear()} RedwoodSDK
-      </footer>
+      <Footer/>
     </div>
   );
 }
