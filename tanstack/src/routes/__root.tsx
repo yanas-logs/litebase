@@ -7,6 +7,7 @@ import {
     HeadContent,
     Scripts,
 } from '@tanstack/react-router'
+import { Navbar } from '../components/navbar'
 
 export const Route = createRootRoute({
     head: () => ({
@@ -29,8 +30,11 @@ export const Route = createRootRoute({
 function RootComponent() {
     return (
         <RootDocument>
-            <Outlet />
-        </RootDocument>
+            <Navbar />
+            <main>
+                <Outlet />
+            </main>
+        </RootDocument >
     )
 }
 
